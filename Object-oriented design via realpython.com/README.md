@@ -8,7 +8,7 @@ I took a series of lectures on OOD in Python from [realpython.com](https://realp
 * ```class``` vs ```instance```
   * ```class``` is like a blueprint of a component. You need to design the way how the component is expected to function without creating the actual component (say in the memory on the computer).
   * ```instance``` is the actual component that is created using way it was defined, and it "lives" in the memory of computer (with an memory address). The process of creating the ```instance``` from ```class``` is called **instantiate**.
-  * It's tempting to say ```object``` when describing ```class``` and ```instance```, but in python3, object is reserved to describe the most fundamental data type, which is the root of everything in python3. That being said, the correct technical term to call class and instance in this case are ***class object*** and ***instance object*** respectively.
+  * It's tempting to say ```object``` when describing ```class``` and ```instance```, but in python3, object is reserved to describe the most fundamental data type, which is the root of everything in python3. That being said, the correct technical term to call ```class``` and ```instance``` in this case are ***class object*** and ***instance object*** respectively.
 
 * ```class``` basics
   * a ```class``` is consisted of ***attributes*** and ***methods***. ***Attribute*** describes the properties of the class, and ***method*** describes the behaviors of the class. Of course, as you might think, a ***method*** can involves changing its ***attributes*** given some internal/external parameters.
