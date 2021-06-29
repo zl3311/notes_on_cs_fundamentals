@@ -17,4 +17,9 @@ I took a series of lectures on OOD in Python from [realpython.com](https://realp
 
 * ```__str__``` vs ```__repr__```
   * Sometime, you might want to print out an instance and check out some useful information about it. By default, python returns the name of class and its memory location when you call ```print(myInstance)```. This may not provide you with enough information, and in this case, ```__str__``` and ```__repr__``` become useful.
+  * ```__str__``` method is used when you try to print the instance (either ```str(myInstance)``` or ```print(myInstance)```). The goal of introducing ```def __str__``` is to make the instance more **readable** to human readers. 
+  * Similarly, ```__repr__``` method is used to clarify specifications about the instance. The difference between ```__str__``` and ```__repr__``` is that ```__repr__``` is designed to make the instance **unambiguous** to machine (and maybe developers).
+  * In fact, the ```__str__``` method by default calls ```__repr__`` method if no ```__str__``` method is explicitly defined. But it would be better to define both methods for interpretability.
+
+* ```super()```charge!
   * 
