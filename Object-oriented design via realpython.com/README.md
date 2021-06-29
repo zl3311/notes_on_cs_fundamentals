@@ -12,6 +12,6 @@ I took a series of lectures on OOD in Python from [realpython.com](https://realp
 
 * ```class``` basics
   * a ```class``` is consisted of ***attributes*** and ***methods***. ***Attribute*** describes the properties of the class, and ***method*** describes the behaviors of the class. Of course, as you might think, a ***method*** can involves changing its ***attributes*** given some internal/external parameters.
-  * In python, defining a ```class``` is REALLY straight-forward, simply ```class MyClass```. Here, ```class``` is a clarification of defining a new ```class```, and ```MyClass``` is the name of the defined ```class```. By convention, the capital letter of 
+  * In python, defining a ```class``` is REALLY straight-forward, simply ```class MyClass```. Here, ```class``` is a clarification of defining a new ```class```, and ```MyClass``` is the name of the defined ```class```. By convention, the intial letter of class name should be in captial.
   * Some initialization is need for the class, like setting the initial values of different ***attributes***. In python, initialization is declared using ```def __init__```.
   * 
