@@ -6,7 +6,7 @@ Object-oriented design is a programming principle that is useful when building a
 I took a series of lectures on OOD in Python from [realpython.com](https://realpython.com/learning-paths/object-oriented-programming-oop-python/) and summarized my takeaways from it.
 
 * ```class``` vs ```instance```
-  * ```class``` is like a blueprint of a component. You need to design the way how the component is expected to function without creating the actual component (say in the memory on the computer).
+ * ```class``` is like a blueprint of a component. You need to design the way how the component is expected to function without creating the actual component (say in the memory on the computer).
   * ```instance``` is the actual component that is created using way it was defined, and it "lives" in the memory of computer (with an memory address). The process of creating the ```instance``` from ```class``` is called **instantiate**.
   * It's tempting to say ```object``` when describing ```class``` and ```instance```, but in python3, object is reserved to describe the most fundamental data type, which is the root of everything in python3. That being said, the correct technical term to call ```class``` and ```instance``` in this case are ***class object*** and ***instance object*** respectively.
 
