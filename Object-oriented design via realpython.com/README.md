@@ -14,4 +14,7 @@ I took a series of lectures on OOD in Python from [realpython.com](https://realp
   * a ```class``` is consisted of ***attributes*** and ***methods***. ***Attribute*** describes the properties of the class, and ***method*** describes the behaviors of the class. Of course, as you might think, a ***method*** can involves changing its ***attributes*** given some internal/external parameters.
   * In python, defining a ```class``` is REALLY straight-forward, simply ```class MyClass```. Here, ```class``` is a clarification of defining a new ```class```, and ```MyClass``` is the name of the defined ```class```. By convention, the intial letter of class name should be in captial.
   * Some initialization is need for the class, like setting the initial values of different ***attributes***. In python, initialization is declared using ```def __init__```.
+
+* ```__str__``` vs ```__repr__```
+  * Sometime, you might want to print out an instance and check out some useful information about it. By default, python returns the name of class and its memory location when you call ```print(myInstance)```. This may not provide you with enough information, and in this case, ```__str__``` and ```__repr__``` become useful.
   * 
