@@ -25,7 +25,8 @@ I took a series of lectures on OOD in Python from [realpython.com](https://realp
   * As mentioned earlier, OOD is useful when designing hierarchies of relationships, and one of the common relationships is the parent-child type of relationship. In OOD, this type of ***is-a*** relationship is called **inheritance**, and I'll talk more about it together with another common relationship called **composition** later this markdown.
   * Let's say you defined a class called ```class Parent```, and you would like to have another class that has everything of ```class Parent``` plus some additional features. You can simply do it as ```class Child(Parent)``` in python, which simply means ```class Child``` adopted everything from ```class Parent``` and has the potential to do additional things beyond that. In python, this type of relationship is sometimes referred to as base/parent class and subclass.
   * Let's say for initialization, if you simply want to use however the base class initializes, you don't even need to re-initialize inside the subclass. It's automatically managed by default in python. However, if you would like to use the initialization of base class but do it slightly different upon that, ```super()``` becomes useful. You can do it as follows.
-  
+
+
   ```
   class Child(Parent):
       def __init__(self):
