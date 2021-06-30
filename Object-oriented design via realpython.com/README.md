@@ -26,12 +26,10 @@ I took a series of lectures on OOD in Python from [realpython.com](https://realp
   * Let's say you defined a class called ```class Parent```, and you would like to have another class that has everything of ```class Parent``` plus some additional features. You can simply do it as ```class Child(Parent)``` in python, which simply means ```class Child``` adopted everything from ```class Parent``` and has the potential to do additional things beyond that. In python, this type of relationship is sometimes referred to as base/parent class and subclass.
   * Let's say for initialization, if you simply want to use however the base class initializes, you don't even need to re-initialize inside the subclass. It's automatically managed by default in python. However, if you would like to use the initialization of base class but do it slightly different upon that, ```super()``` becomes useful. You can do it as follows.
 
-
-  ```
-  class Child(Parent):
+  ```class Child(Parent):
       def __init__(self):
           super().__init__() # Initialize the same as Parent class first
-          # Then do something special for Child class specifically
+          # Then do something special for Child class
   ```
   
   * In case of multiple layers of inheritance, which specific function you are trying to retrieve becomes messy. In this case, python handles this situation by using **Method Resolution Order (MRO)**, which is generated using C3 Linearization Algorithm. You can have access to the MRO for any method by calling ```object.__mro__```.
