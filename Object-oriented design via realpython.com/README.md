@@ -6,7 +6,7 @@ Object-oriented design is a programming principle that is useful when building a
 I took a series of lectures on OOD in Python from [realpython.com](https://realpython.com/learning-paths/object-oriented-programming-oop-python/) and summarized my takeaways from it.
 
 * ```class``` vs ```instance```
- * ```class``` is like a blueprint of a component. You need to design the way how the component is expected to function without creating the actual component (say in the memory on the computer).
+  * ```class``` is like a blueprint of a component. You need to design the way how the component is expected to function without creating the actual component (say in the memory on the computer).
   * ```instance``` is the actual component that is created using way it was defined, and it "lives" in the memory of computer (with an memory address). The process of creating the ```instance``` from ```class``` is called **instantiate**.
   * It's tempting to say ```object``` when describing ```class``` and ```instance```, but in python3, object is reserved to describe the most fundamental data type, which is the root of everything in python3. That being said, the correct technical term to call ```class``` and ```instance``` in this case are ***class object*** and ***instance object*** respectively.
 
@@ -22,4 +22,13 @@ I took a series of lectures on OOD in Python from [realpython.com](https://realp
   * In fact, the ```__str__``` method by default calls ```__repr__`` method if no ```__str__``` method is explicitly defined. But it would be better to define both methods for interpretability.
 
 * ```super()```charge!
-  * 
+  * As mentioned earlier, OOD is useful when designing hierarchies of relationships, and one of the common relationships is the parent-child type of relationship. In OOD, this type of ***is-a*** relationship is called **inheritance**, and I'll talk more about it together with another common relationship called **composition** later this markdown.
+  * Let's say you defined a class called ```class Parent```, and you would like to have another class that has everything of ```class Parent``` plus some additional features. You can simply do it as ```class Child(Parent)``` in python, which simply means ```class Child``` adopted everything from ```class Parent``` and has the potential to do additional things beyond that. In python, this type of relationship is sometimes referred to as base/parent class and subclass.
+  * Let's say for initialization, if you simply want to use however the base class initializes, you don't even need to re-initialize inside the subclass. It's automatically managed by default in python. However, if you would like to use the initialization of base class but do it slightly different upon that, ```super()``` becomes useful. You can do it as follows.
+  
+  ```
+  class Child(Parent):
+      def __init__(self):
+          super().__init__(self):
+          # Do something special
+  ```
