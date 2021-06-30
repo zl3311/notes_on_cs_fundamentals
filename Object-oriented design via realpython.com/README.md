@@ -29,6 +29,8 @@ I took a series of lectures on OOD in Python from [realpython.com](https://realp
   ```
   class Child(Parent):
       def __init__(self):
-          super().__init__(self):
-          # Do something special
+          super().__init__() # Initialize the same as Parent class first
+          # Then do something special for Child class specifically
   ```
+  
+  * In case of multiple layers of inheritance, which specific function you are trying to retrieve becomes messy. In this case, python handles this situation by using **Method Resolution Order (MRO)**, which is generated using C3 Linearization Algorithm. You can have access to the MRO for any method by calling ```object.__mro__```.
